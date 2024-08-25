@@ -1,0 +1,113 @@
+.grid-container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto;
+    gap: 20px;
+}
+
+.card {
+    padding: 10px;
+    align-self: center;
+    justify-self: center;
+    width: 80%;
+    box-shadow: 0 10px 10px gray;
+}
+
+#daniel{
+    background-image: url(bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color: #733FC8;
+
+}
+
+#jonathan{
+    background-color: #48546A;
+}
+
+#jeanette h3{
+    color: gray;
+}
+
+#patrick {
+    background-color: #18202D;
+}
+
+#kira h3{
+    color: gray;
+}
+
+img[alt='userimage'] {
+    width: 40px;
+    border-radius: 50%;
+    float: left;
+}
+
+span {
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.occupation {
+    color: gray;
+}
+
+h3 {
+    margin-top: 5%;
+    color: white;
+}
+
+p {
+    margin-top: 5%;
+    color: gray;
+}
+
+@media (min-width:1200px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 450px;
+        padding: 10px;
+        align-items: start;
+        justify-content: start;
+        height: auto;
+
+    }
+
+    .card {
+        align-self: self-start;
+        justify-self: none;
+        width: auto;
+        height: 100%;
+    }
+
+    #daniel {
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+
+    #kira {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        ;
+    }
+
+    #jeanette {
+        grid-row-start: 2;
+        grid-row-end:2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #patrick {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+}
